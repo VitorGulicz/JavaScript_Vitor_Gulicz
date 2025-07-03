@@ -9,9 +9,9 @@ function mouseOut()
 
 function mouseOver2()
 {
-    document.imagem.src="image/cat4.jpg";
+    document.imagem2.src="image/cat4.jpg";
 }
 function mouseOut2()
 {
-    document.imagem.src="image/cat3.jpg";
+    document.imagem2.src="image/cat3.jpg";
 }
