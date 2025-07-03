@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf8" http-equiv="Content-Type"/>
+    <title>alert</title>
+<script type="text/javascript" src="js\jquery-3.7.1.js"></script>
+
+<script>
+    function soma(){
+        var x ;
+        var num1=parseFloat(prompt("Digite o primeiro numero:"));
+            if (num1!=null){
+                var num2=parseFloat(prompt("Digite o segundo numero:"));
+                if (num1!=null){
+                    x="Soma dos numeros = "+(num1 + num2)+ ""
+                    document.getElementById("demo").innerHTML=x
+                }
+            }   
+
+        }
+        function menos(){
+        var x ;
+        var num1=parseFloat(prompt("Digite o primeiro numero:"));
+            if (num1!=null){
+                var num2=parseFloat(prompt("Digite o segundo numero:"));
+                if (num1!=null){
+                    x="Subtração dos numeros = "+(num1 - num2)+ ""
+                    document.getElementById("demo").innerHTML=x
+                }
+            }   
+
+        }
+        function mult(){
+        var x ;
+        var num1=parseFloat(prompt("Digite o primeiro numero:"));
+            if (num1!=null){
+                var num2=parseFloat(prompt("Digite o segundo numero:"));
+                if (num1!=null){
+                    x="Multiplicação dos numeros = "+(num1 * num2)+ ""
+                    document.getElementById("demo").innerHTML=x
+                }
+            }   
+
+        }
+        function div(){
+        var x ;
+            var num1=parseFloat(prompt("Digite o primeiro numero:"));
+            if (num1!=null){
+                var num2=parseFloat(prompt("Digite o segundo numero:"));
+                if (num1!=null){
+                    x="Divisão dos numeros = "+(num1 / num2)+ ""
+                    document.getElementById("demo").innerHTML=x
+                }
+            }   
+
+        }
+</script>
+</head>
+<body>
+<center><h1>Calculadora</h1>
+    <p>Clique no botão para realizar uma conta de soma (+).</p>
+        <input type="button" onclick="soma()" value="Soma"/>
+        <p>Clique no botão para realizar uma conta de subtração (-).</p>
+        <input type="button" onclick="menos()" value="Menos"/>
+        <p>Clique no botão para realizar uma conta de multiplicação (*).</p>
+        <input type="button" onclick="mult()" value="Multiplicação"/>
+        <p>Clique no botão para realizar uma conta de divisão (/).</p>
+        <input type="button" onclick="div()" value="Divisão"/>
+
+
+        <h1><p id="demo"></p></h1>
+    </center>
+</body>
+
+</html>
